@@ -92,7 +92,7 @@ namespace RustRouletteHelper
             lblSince1.Text = since1.ToString();
             lblSince3.Text = since3.ToString();
             lblSince5.Text = since5.ToString();
-            lblSince10.Text = since5.ToString();
+            lblSince10.Text = since10.ToString();
             lblSince20.Text = since20.ToString();
 
             if (since1 > 1)
@@ -103,7 +103,7 @@ namespace RustRouletteHelper
             if (since3 > 2)
                 lblSince3.ForeColor = Color.Green;
 
-            if (since5 > 3)
+            if (since5 > 2)
                 lblSince5.ForeColor = Color.Goldenrod;
             if (since5 > 4)
                 lblSince5.ForeColor = Color.Green;
@@ -133,6 +133,15 @@ namespace RustRouletteHelper
             lblSince5.ForeColor = Color.Red;
             lblSince10.ForeColor = Color.Red;
             lblSince20.ForeColor = Color.Red;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.TopMost == false)
+                this.TopMost = true;
+            else
+                this.TopMost = false;
+
         }
     }
 }
