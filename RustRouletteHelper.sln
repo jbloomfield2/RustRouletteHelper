@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RustRouletteHelper", "RustRouletteHelper\RustRouletteHelper.csproj", "{71ED83DC-B6B7-4681-A930-BA3B69FACFBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71ED83DC-B6B7-4681-A930-BA3B69FACFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71ED83DC-B6B7-4681-A930-BA3B69FACFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71ED83DC-B6B7-4681-A930-BA3B69FACFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71ED83DC-B6B7-4681-A930-BA3B69FACFBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE3F0C01-9822-4EE0-BAAD-3DEFD0BEFAE7}
+	EndGlobalSection
+EndGlobal
