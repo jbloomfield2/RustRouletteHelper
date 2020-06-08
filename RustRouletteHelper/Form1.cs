@@ -17,6 +17,10 @@ namespace RustRouletteHelper
         int since5 = 0;
         int since10 = 0;
         int since20 = 0;
+        bool hasGot5 = false;
+        bool hasGot10 = false;
+        bool hasGot20 = false;
+
 
         public Form1()
         {
@@ -57,6 +61,7 @@ namespace RustRouletteHelper
                     since3++;
                     since10++;
                     since20++;
+                    hasGot5 = true;
                     break;
 
                 case "10":
@@ -66,6 +71,7 @@ namespace RustRouletteHelper
                     since3++;
                     since5++;
                     since20++;
+                    hasGot10 = true;
                     break;
 
                 case "20":
@@ -75,6 +81,7 @@ namespace RustRouletteHelper
                     since3++;
                     since5++;
                     since10++;
+                    hasGot20 = true;
                     break;
 
                 default:
@@ -94,6 +101,12 @@ namespace RustRouletteHelper
             lblSince5.Text = since5.ToString();
             lblSince10.Text = since10.ToString();
             lblSince20.Text = since20.ToString();
+            if (!hasGot5)
+                lblSince5.Text = since5.ToString() + "?";
+            if (!hasGot10)
+                lblSince10.Text = since10.ToString() + "?";
+            if (!hasGot20)
+                lblSince20.Text = since20.ToString() + "?";
 
             if (since1 > 1)
                 lblSince1.ForeColor = Color.Green;
